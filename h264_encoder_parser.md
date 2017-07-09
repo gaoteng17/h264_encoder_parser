@@ -589,11 +589,30 @@ int main()
 ## 4.1 编码
 
 原始YUV文件``ds_480x272.yuv``位于目录首页，480x272分辨率，总共100帧。H264编码程序运行时截图如下：
+
 ![h264_encoder](C:\Users\gaoteng17\Desktop\h264_encoder_parser\h264_encoder.png)
+
+将编码后的h264使用FFmpeg中的ffplay命令播放测试，运行截图如下：
+
+![h264_ffplay](C:\Users\gaoteng17\Desktop\h264_encoder_parser\h264_ffplay.png)
 
 ## 4.2 码流解析
 
 本程序的输入为一个H.264原始码流（裸流）的文件路径，输出为该码流的NALU统计数据，如下图所示。
+
+![h264_parser](C:\Users\gaoteng17\Desktop\h264_encoder_parser\h264_parser.png)
+
+至此，完成了视频的H.264编码及其码流的解析。
+
+# 5 结语
+
+FFMPEG的视音频编解码功能极其强大，几乎囊括了现存所有的视音频编码标准。如今做视音频开发的相关企业，几乎离不开它。
+
+但从另一个角度来看，FFmpeg的学习难度也比较大。写作本篇课程设计所学习到的知识只是FFmpeg框架中极少的一部分，但对于认识FFmpeg有极大帮助。
+
+本文使用Markdown语法编写，文中所有代码，借助的库函数及测试文件均上传至了我的Github项目页面。
+
+如需查阅，请访问：https://github.com/gaoteng17/h264_encoder_parser 。
 
 # _参考资料_
 
@@ -603,6 +622,3 @@ int main()
 4. H.264 - Wikipedia. https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC
 5. FFmpeg - Github. https://github.com/FFmpeg/FFmpeg
 6. leixiaohua - Github. https://github.com/leixiaohua1020
-
-# _其它_
-
