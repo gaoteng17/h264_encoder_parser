@@ -1,5 +1,3 @@
-[TOC]
-
 # 1 概述
 
 FFmpeg是一个开源的多媒体库，使用非常广泛。FFmpeg在Linux平台下开发，但它同样也可以在其它操作系统环境中编译运行。
@@ -590,17 +588,17 @@ int main()
 
 原始YUV文件``ds_480x272.yuv``位于目录首页，480x272分辨率，总共100帧。H264编码程序运行时截图如下：
 
-![h264_encoder](C:\Users\gaoteng17\Desktop\h264_encoder_parser\h264_encoder.png)
+![h264_encoder](https://github.com/gaoteng17/h264_encoder_parser/blob/master/h264_encoder.png)
 
 将编码后的h264使用FFmpeg中的ffplay命令播放测试，运行截图如下：
 
-![h264_ffplay](C:\Users\gaoteng17\Desktop\h264_encoder_parser\h264_ffplay.png)
+![h264_ffplay](https://github.com/gaoteng17/h264_encoder_parser/blob/master/h264_ffplay.png)
 
 ## 4.2 码流解析
 
 本程序的输入为一个H.264原始码流（裸流）的文件路径，输出为该码流的NALU统计数据，如下图所示。
 
-![h264_parser](C:\Users\gaoteng17\Desktop\h264_encoder_parser\h264_parser.png)
+![h264_parser](https://github.com/gaoteng17/h264_encoder_parser/blob/master/h264_parser.png)
 
 至此，完成了视频的H.264编码及其码流的解析。
 
